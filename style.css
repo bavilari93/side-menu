@@ -35,4 +35,7 @@ a {
   left: 20px;
   flex-direction: column; }
 
+.current {
+  color: pink; }
+
 /*# sourceMappingURL=style.css.map */
