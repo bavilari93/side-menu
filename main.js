@@ -1,21 +1,23 @@
 $(() => {
     const navLinks = document.getElementById("nav").querySelectorAll("a");
     const mainSection = document.querySelectorAll("main section"); 
-    let lastId; 
-    let cur=[];
 
     window.addEventListener('scroll', event =>{
+    	// top distance
     	let fromTop = window.scrollY; 
+    	// iterate through nav links 
     	navLinks.forEach(link=>{
-    		let section = document.querySelector(link.hash);	
+    		// section selection
+    	let section = document.querySelector(link.hash);	
     	if(
+    		// offsetTop the pixel from the top 
     		section.offsetTop <= fromTop && 
+    		// returns the height of the element 
     		section.offsetTop + section.offsetHeight > fromTop
     		){
-
-    		link.classList.add("current");
+    		link.style.color ="pink";
     	}else{
-    		link.classList.remove('current');
+    		link.style.color="white";
     	}
     	})
     })

@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -20,6 +21,7 @@ a {
 }
 
 .cool {
+margin-top:0px;;
     height: 100vh;
     width: 100vw;
     border: solid .1rem white;
@@ -33,14 +35,39 @@ a {
 }
 
 #nav {
-	height: 100vh; 
+    height: 100vh;
     display: flex;
     position: fixed;
     z-index: 1;
     top: 250px;
     left: 20px;
     flex-direction: column;
-}
-.current{
-	color:pink;
+    text-align: center;
+    letter-spacing: .2rem;
+
+    a {
+        margin-top: .5rem;
+
+        &:hover {
+            background: grey;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: " ";
+        position: absolute;
+        height: 10rem;
+        width: .1rem;
+        background: #fff;
+        margin-left: 2rem;
+    }
+
+    &:before {
+        top: -12rem;
+    }
+
+    &:after {
+        top: 10rem;
+    }
 }
