@@ -17,7 +17,6 @@ a {
   color: white; }
 
 .cool {
-  margin-top: 0px;
   height: 100vh;
   width: 100vw;
   border: solid .1rem white; }
@@ -53,5 +52,34 @@ a {
     top: -12rem; }
   #nav:after {
     top: 10rem; }
+
+main section:nth-child(odd) {
+  background-color: #ffe4e1;
+  margin-top: -.5rem; }
+
+#header:hover #icon {
+  transform: rotate(-40deg);
+  border-color: white; }
+
+#icon {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  transform: rotate(-47deg);
+  cursor: pointer;
+  bottom: 10px;
+  margin-left: 50%;
+  border-left: solid .2rem #ffa502;
+  border-bottom: solid .2rem #ffa502;
+  border-radius: 10%; }
+
+.slider {
+  position: absolute;
+  background-color: white;
+  bottom: 0rem;
+  width: 100%;
+  height: 0%;
+  overflow-x: hidden;
+  transition: 1s; }
 
 /*# sourceMappingURL=style.css.map */
