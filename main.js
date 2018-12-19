@@ -5,7 +5,8 @@ $(() => {
             window.addEventListener('scroll', () => {
                     // top distance
                     let fromTop = window.scrollY;
-                    let offset = window.pageYOffset;
+                    let offset = window.pageYOffset + 300;
+
 
                     // iterate through nav links 
                     navLinks.forEach(link => {
@@ -20,11 +21,11 @@ $(() => {
                                         section.offsetTop + section.offsetHeight > fromTop
                                     ) {
                                         link.style.color = "#ffa502";
-                                        slideImage.style.transform="rotate(90deg)";
+                                        slideImage.style.transform="rotate(0deg)";
 
                                     } else {
                                         link.style.color = "white";
-                                        slideImage.style.transform="rotate(0deg)";
+                                        slideImage.style.transform="rotate(90deg)";
 
                                     }
 
@@ -36,7 +37,8 @@ $(() => {
                     })
 
                 // icon slider up 
-                let icon = document.getElementById('icon'); console.log(icon); icon.addEventListener('click', (() => {
+                let icon = document.getElementById('icon');
+                 icon.addEventListener('click', (() => {
                     let slider = $('.slider')[0];
                     slider.style.height = "30%";
 
