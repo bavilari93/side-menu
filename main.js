@@ -25,7 +25,7 @@ $(() => {
 
                                     } else {
                                         link.style.color = "white";
-                                        slideImage.style.transform="rotate(90deg)";
+                                        slideImage.style.transform="rotate(180deg)";
 
                                     }
 

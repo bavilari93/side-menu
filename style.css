@@ -58,7 +58,8 @@ main section {
   width: 100vw;
   overflow: hidden; }
   .cool img {
-    objet-fit: cover; }
+    objet-fit: cover;
+    opacity: .8; }
 
 #header:hover #icon {
   transform: rotate(-40deg);
@@ -91,7 +92,7 @@ main section {
   width: 100vw;
   background-color: pink;
   z-index: 0;
-  transition: .3s ease-out;
+  transition: .5s ease;
   transform: rotate(0deg);
   scale-down: contain; }
 
